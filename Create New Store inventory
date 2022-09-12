@@ -1,0 +1,15 @@
+--Create a new store with inventory and order by price
+
+CREATE TABLE StephsShop (id INTEGER PRIMARY KEY, Item TEXT, Style TEXT, Brand TEXT, Quantity INTEGER, Color TEXT, Price INTEGER);
+
+INSERT INTO StephsShop VALUES (1, "Shirt", "t-shirt", "Levi's", 20, "black", 30);
+INSERT INTO StephsShop VALUES (2, "Shirt", "t-shirt", "Levi's", 25, "white", 25);
+INSERT INTO StephsShop VALUES (3, "Shirt", "blouse", "Levi's", 20, "wildflowers", 19);
+INSERT INTO StephsShop VALUES (4, "Pants", "jeans", "Levi's", 15, "midnight blue", 45);
+INSERT INTO StephsShop VALUES (5, "Pants", "jeans", "Levi's", 20, "black", 50);
+INSERT INTO StephsShop VALUES (6, "Pants", "jeans", "Levi's", 35, "white", 35);
+INSERT INTO StephsShop VALUES (7, "Necklace", "choker", "Universal Thread", 15, "gold", 15);
+INSERT INTO StephsShop VALUES (8, "Bracelet", "bangle", "Universal Thread", 10, "silver", 10);
+INSERT INTO StephsShop VALUES (9, "Earrings", "stud", "Universal Thread", 10, "rose gold", 8);
+
+SELECT * from StephsShop ORDER BY price;
